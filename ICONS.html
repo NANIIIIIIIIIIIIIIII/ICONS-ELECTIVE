@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Redirect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: url(https://i.pinimg.com/originals/5d/89/2e/5d892ee89d4f106f66a0c9eb27c2bc87.gif) center fixed;
+      background-size: auto;
+   
+    }
+
+    #icons-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      margin: 15px;
+      cursor: pointer;
+      border-radius: 220%;
+      overflow: hidden;
+      width: 255px; 
+      height: 255px; 
+    }
+  </style>
+</head>
+<body>
+
+  <div id="icons-container">
+    <div class="icon" onclick="redirectToSite('https://www.facebook.com/')">
+      <img src="https://i.pinimg.com/236x/51/fd/21/51fd21a441b669d59e68a14ff9e58b40.jpg" alt="Facebook Icon">
+    </div>
+
+    <div class="icon" onclick="redirectToSite('https://www.twitter.com/')">
+      <img src="https://i.pinimg.com/236x/39/8c/25/398c25a4436e5b8ca72f141084cdc66e.jpg" alt="Twitter Icon">
+    </div>
+
+    <div class="icon" onclick="redirectToSite('https://www.instagram.com/')">
+      <img src="https://i.pinimg.com/236x/58/a2/be/58a2bec02ecb40d12e507e2a212c46c6.jpg" alt="Instagram Icon">
+    </div>
+
+    <div class="icon" onclick="redirectToSite('https://tiktok.com/')">
+      <img src="https://i.pinimg.com/236x/9e/b9/dd/9eb9dd692dabdb0aa08cb09e94b6f209.jpg" alt="TikTok Icon">
+    </div>
+
+    <div class="icon" onclick="redirectToSite('https://www.youtube.com/')">
+      <img src="https://i.pinimg.com/236x/8f/e4/66/8fe4669ccbe240ebfe3bce3b19f6665c.jpg" alt="YouTube Icon">
+    </div>
+  </div>
+
+  <script>
+    function redirectToSite(url) {
+      window.location.href = url;
+    }
+  </script>
+  
+</body>
+</html>
